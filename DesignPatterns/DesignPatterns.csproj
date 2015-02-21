@@ -70,6 +70,16 @@
     <Compile Include="FactoryPattern\Solution\InvoiceWithHeader.cs" />
     <Compile Include="FactoryPattern\Solution\InvoiceWithOutHeader.cs" />
     <Compile Include="IClient.cs" />
+    <Compile Include="Interpreter\AbstractExpression.cs" />
+    <Compile Include="Interpreter\Client.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\DayExpression.cs" />
+    <Compile Include="Interpreter\Interpreter.cs" />
+    <Compile Include="Interpreter\MonthExpression.cs" />
+    <Compile Include="Interpreter\SeparatorExpression.cs" />
+    <Compile Include="Interpreter\YearExpression.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PrototypePattern\DeepCopy\Address.cs" />
@@ -93,9 +103,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interpreter\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
