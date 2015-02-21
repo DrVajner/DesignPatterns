@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6C54EBE-02FF-468B-893B-42FFEDE11424}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactoryPattern\Button.cs" />
+    <Compile Include="AbstractFactoryPattern\Client.cs" />
+    <Compile Include="AbstractFactoryPattern\FactoryButton.cs" />
+    <Compile Include="AbstractFactoryPattern\FactoryTextBox.cs" />
+    <Compile Include="AbstractFactoryPattern\AbstractFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\IInterfaceRender.cs" />
+    <Compile Include="AbstractFactoryPattern\TextBox.cs" />
+    <Compile Include="BuilderPattern\Client.cs" />
+    <Compile Include="BuilderPattern\Director.cs" />
+    <Compile Include="BuilderPattern\Report.cs" />
+    <Compile Include="BuilderPattern\ReportBuilder.cs" />
+    <Compile Include="BuilderPattern\ReportExcel.cs" />
+    <Compile Include="BuilderPattern\ReportPDF.cs" />
+    <Compile Include="CommandPattern\Client.cs" />
+    <Compile Include="CommandPattern\Execute.cs" />
+    <Compile Include="CommandPattern\ExecuteExit.cs" />
+    <Compile Include="CommandPattern\ExecuteFile.cs" />
+    <Compile Include="CommandPattern\ExecuteOpen.cs" />
+    <Compile Include="CommandPattern\ExecutePrint.cs" />
+    <Compile Include="CommandPattern\Invoker.cs" />
+    <Compile Include="FactoryPattern\Problem\Client.cs" />
+    <Compile Include="FactoryPattern\Problem\InvoiceWithHeader.cs" />
+    <Compile Include="FactoryPattern\Problem\InvoiceWithOutHeader.cs" />
+    <Compile Include="FactoryPattern\Solution\Client.cs" />
+    <Compile Include="FactoryPattern\Solution\FactoryInvoice.cs" />
+    <Compile Include="FactoryPattern\Solution\IInvoice.cs" />
+    <Compile Include="FactoryPattern\Solution\InvoiceWithHeader.cs" />
+    <Compile Include="FactoryPattern\Solution\InvoiceWithOutHeader.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrototypePattern\DeepCopy\Address.cs" />
+    <Compile Include="PrototypePattern\DeepCopy\Client.cs" />
+    <Compile Include="PrototypePattern\DeepCopy\Customer.cs" />
+    <Compile Include="PrototypePattern\ShallowCopy\Address.cs" />
+    <Compile Include="PrototypePattern\ShallowCopy\Client.cs" />
+    <Compile Include="PrototypePattern\ShallowCopy\Customer.cs" />
+    <Compile Include="SingletonPattern\Client.cs" />
+    <Compile Include="SingletonPattern\Country.cs" />
+    <Compile Include="SingletonPattern\Currency.cs" />
+    <Compile Include="SingletonPattern\FifthVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\FirstVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\FourthVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\SecondVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\SingletonBase.cs" />
+    <Compile Include="SingletonPattern\SixthVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\ThirdVersion\Singleton.cs" />
+    <Compile Include="SingletonPattern\ZeroVersion\Singleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interpreter\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

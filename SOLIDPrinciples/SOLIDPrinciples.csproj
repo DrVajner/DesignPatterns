@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C7B59B3-546A-44DE-AC20-7C7398C90BF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOLIDPrinciples</RootNamespace>
+    <AssemblyName>SOLIDPrinciples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D\Problem\Customer.cs" />
+    <Compile Include="D\Problem\EmailLogger.cs" />
+    <Compile Include="D\Problem\EventViewerLogger.cs" />
+    <Compile Include="D\Problem\FileLogger.cs" />
+    <Compile Include="D\Problem\IDatabase.cs" />
+    <Compile Include="D\Problem\IDiscount.cs" />
+    <Compile Include="D\Problem\ILogger.cs" />
+    <Compile Include="D\Solution\Customer.cs" />
+    <Compile Include="D\Solution\EmailLogger.cs" />
+    <Compile Include="D\Solution\EventViewerLogger.cs" />
+    <Compile Include="D\Solution\FileLogger.cs" />
+    <Compile Include="D\Solution\IDatabase.cs" />
+    <Compile Include="D\Solution\IDiscount.cs" />
+    <Compile Include="D\Solution\ILogger.cs" />
+    <Compile Include="IClient.cs" />
+    <Compile Include="ISP\Problem\CustomerWORead.cs" />
+    <Compile Include="ISP\Problem\CustomerWRead.cs" />
+    <Compile Include="ISP\Problem\IDatabase.cs" />
+    <Compile Include="ISP\Solution\CustomerWORead.cs" />
+    <Compile Include="ISP\Solution\CustomerWRead.cs" />
+    <Compile Include="ISP\Solution\IDatabase.cs" />
+    <Compile Include="ISP\Solution\IDatabaseV1.cs" />
+    <Compile Include="LSP\Problem\Customer.cs" />
+    <Compile Include="LSP\Problem\Enquiry.cs" />
+    <Compile Include="LSP\Problem\GoldCustomer.cs" />
+    <Compile Include="LSP\Problem\SilverCustomer.cs" />
+    <Compile Include="LSP\Solution\Customer.cs" />
+    <Compile Include="LSP\Solution\Enquiry.cs" />
+    <Compile Include="LSP\Solution\GoldCustomer.cs" />
+    <Compile Include="LSP\Solution\IDatabase.cs" />
+    <Compile Include="LSP\Solution\IDiscount.cs" />
+    <Compile Include="LSP\Solution\SilverCustomer.cs" />
+    <Compile Include="O\Problem\Customer.cs" />
+    <Compile Include="O\Solution\Customer.cs" />
+    <Compile Include="O\Solution\GoldCustomer.cs" />
+    <Compile Include="O\Solution\SilverCustomer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRP\BetterSolution\Client.cs" />
+    <Compile Include="SRP\BetterSolution\Customer.cs" />
+    <Compile Include="SRP\BetterSolution\CustomerDecoration.cs" />
+    <Compile Include="SRP\BetterSolution\FileLogger.cs" />
+    <Compile Include="SRP\BetterSolution\ILogger.cs" />
+    <Compile Include="SRP\MySolution\Client.cs" />
+    <Compile Include="SRP\MySolution\Customer.cs" />
+    <Compile Include="SRP\MySolution\DbClass.cs" />
+    <Compile Include="SRP\MySolution\DbObjectTypeEnum.cs" />
+    <Compile Include="SRP\MySolution\DbObjectFactory.cs" />
+    <Compile Include="SRP\MySolution\FileLogger.cs" />
+    <Compile Include="SRP\MySolution\IDbObject.cs" />
+    <Compile Include="SRP\MySolution\ILogger.cs" />
+    <Compile Include="SRP\Problem\Client.cs" />
+    <Compile Include="SRP\Problem\Customer.cs" />
+    <Compile Include="SRP\Solution\Client.cs" />
+    <Compile Include="SRP\Solution\Customer.cs" />
+    <Compile Include="SRP\Solution\FileLogger.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
