@@ -1,4 +1,4 @@
-﻿using DesingPatternsInForms.State;
+﻿using DesingPatternsInForms.Strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;

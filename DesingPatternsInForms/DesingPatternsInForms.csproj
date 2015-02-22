@@ -76,6 +76,16 @@
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="State\State.cs" />
+    <Compile Include="Strategy\AddStrategy.cs" />
+    <Compile Include="Strategy\ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy\ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy\Maths.cs" />
+    <Compile Include="Strategy\Strategy.cs" />
+    <Compile Include="Strategy\SubstractStrategy.cs" />
     <EmbeddedResource Include="Iterator\ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="State\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy\ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
