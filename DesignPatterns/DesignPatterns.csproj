@@ -107,6 +107,16 @@
     <Compile Include="SingletonPattern\SixthVersion\Singleton.cs" />
     <Compile Include="SingletonPattern\ThirdVersion\Singleton.cs" />
     <Compile Include="SingletonPattern\ZeroVersion\Singleton.cs" />
+    <Compile Include="Visitor\Address.cs" />
+    <Compile Include="Visitor\Client.cs" />
+    <Compile Include="Visitor\Customer.cs" />
+    <Compile Include="Visitor\ICustomerElements.cs" />
+    <Compile Include="Visitor\IVisitor.cs" />
+    <Compile Include="Visitor\Phone.cs" />
+    <Compile Include="Visitor\StringVisitor.cs" />
+    <Compile Include="Visitor\XmlVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
