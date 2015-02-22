@@ -80,6 +80,14 @@
     <Compile Include="Interpreter\YearExpression.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Observer\Client.cs" />
+    <Compile Include="Observer\EmailNotification.cs" />
+    <Compile Include="Observer\EventLogNotification.cs" />
+    <Compile Include="Observer\INotification.cs" />
+    <Compile Include="Observer\Notifier.cs" />
+    <Compile Include="Observer\SMSNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PrototypePattern\DeepCopy\Address.cs" />
