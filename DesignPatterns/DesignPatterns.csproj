@@ -76,6 +76,10 @@
     <Compile Include="FactoryPattern\Solution\IInvoice.cs" />
     <Compile Include="FactoryPattern\Solution\InvoiceWithHeader.cs" />
     <Compile Include="FactoryPattern\Solution\InvoiceWithOutHeader.cs" />
+    <Compile Include="FlyWeight\StaticAddress.cs" />
+    <Compile Include="FlyWeight\Client.cs" />
+    <Compile Include="FlyWeight\StaticAddressHolder.cs" />
+    <Compile Include="FlyWeight\VariableAddress.cs" />
     <Compile Include="IClient.cs" />
     <Compile Include="Interpreter\AbstractExpression.cs" />
     <Compile Include="Interpreter\Client.cs" />
