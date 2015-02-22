@@ -1,4 +1,4 @@
-﻿using DesingPatternsInForms.Iterator;
+﻿using DesingPatternsInForms.Mediator;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -52,9 +52,19 @@
     </Compile>
     <Compile Include="Iterator\Customer.cs" />
     <Compile Include="Iterator\Iterator.cs" />
+    <Compile Include="Mediator\ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediator\ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mediator\Mediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Iterator\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mediator\ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
