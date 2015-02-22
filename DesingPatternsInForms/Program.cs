@@ -1,4 +1,4 @@
-﻿using DesingPatternsInForms.Mediator;
+﻿using DesingPatternsInForms.Memento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
