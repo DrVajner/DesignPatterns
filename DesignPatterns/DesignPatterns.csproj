@@ -48,6 +48,13 @@
     <Compile Include="AbstractFactoryPattern\AbstractFactory.cs" />
     <Compile Include="AbstractFactoryPattern\IInterfaceRender.cs" />
     <Compile Include="AbstractFactoryPattern\TextBox.cs" />
+    <Compile Include="Adapter\Client.cs" />
+    <Compile Include="Adapter\Collection.cs" />
+    <Compile Include="Adapter\CollectionClassAdapter.cs" />
+    <Compile Include="Adapter\CollectionObjectAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Adapter\Stack.cs" />
     <Compile Include="BuilderPattern\Client.cs" />
     <Compile Include="BuilderPattern\Director.cs" />
     <Compile Include="BuilderPattern\Report.cs" />
