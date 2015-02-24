@@ -55,6 +55,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Adapter\Stack.cs" />
+    <Compile Include="Bridge\Bulb.cs" />
+    <Compile Include="Bridge\Client.cs" />
+    <Compile Include="Bridge\IEquipment.cs" />
+    <Compile Include="Bridge\ISwitch.cs" />
+    <Compile Include="Bridge\Refrigerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bridge\Switch.cs" />
     <Compile Include="BuilderPattern\Client.cs" />
     <Compile Include="BuilderPattern\Director.cs" />
     <Compile Include="BuilderPattern\Report.cs" />
