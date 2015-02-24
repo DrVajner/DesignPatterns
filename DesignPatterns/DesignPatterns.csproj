@@ -76,6 +76,11 @@
     <Compile Include="CommandPattern\ExecuteOpen.cs" />
     <Compile Include="CommandPattern\ExecutePrint.cs" />
     <Compile Include="CommandPattern\Invoker.cs" />
+    <Compile Include="Composite\Address.cs" />
+    <Compile Include="Composite\Client.cs" />
+    <Compile Include="Composite\Customer.cs" />
+    <Compile Include="Composite\IBusinessObject.cs" />
+    <Compile Include="Composite\Phone.cs" />
     <Compile Include="FactoryPattern\Problem\Client.cs" />
     <Compile Include="FactoryPattern\Problem\InvoiceWithHeader.cs" />
     <Compile Include="FactoryPattern\Problem\InvoiceWithOutHeader.cs" />
