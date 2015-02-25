@@ -69,6 +69,11 @@
     <Compile Include="BuilderPattern\ReportBuilder.cs" />
     <Compile Include="BuilderPattern\ReportExcel.cs" />
     <Compile Include="BuilderPattern\ReportPDF.cs" />
+    <Compile Include="ChainOfResponsibility\Client.cs" />
+    <Compile Include="ChainOfResponsibility\IProcess.cs" />
+    <Compile Include="ChainOfResponsibility\Process1.cs" />
+    <Compile Include="ChainOfResponsibility\Process2.cs" />
+    <Compile Include="ChainOfResponsibility\Process3.cs" />
     <Compile Include="CommandPattern\Client.cs" />
     <Compile Include="CommandPattern\Execute.cs" />
     <Compile Include="CommandPattern\ExecuteExit.cs" />
