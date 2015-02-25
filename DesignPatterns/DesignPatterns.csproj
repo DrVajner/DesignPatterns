@@ -136,6 +136,9 @@
     <Compile Include="PrototypePattern\ShallowCopy\Address.cs" />
     <Compile Include="PrototypePattern\ShallowCopy\Client.cs" />
     <Compile Include="PrototypePattern\ShallowCopy\Customer.cs" />
+    <Compile Include="Proxy\ActualImage.cs" />
+    <Compile Include="Proxy\Client.cs" />
+    <Compile Include="Proxy\IImageProxy.cs" />
     <Compile Include="SingletonPattern\Client.cs" />
     <Compile Include="SingletonPattern\Country.cs" />
     <Compile Include="SingletonPattern\Currency.cs" />

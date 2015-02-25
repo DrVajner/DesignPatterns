@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.ChainOfResponsibility;
+using DesignPatterns.Proxy;
 
 namespace DesignPatterns
 {
