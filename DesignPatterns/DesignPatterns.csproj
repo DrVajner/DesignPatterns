@@ -81,6 +81,12 @@
     <Compile Include="Composite\Customer.cs" />
     <Compile Include="Composite\IBusinessObject.cs" />
     <Compile Include="Composite\Phone.cs" />
+    <Compile Include="Decorator\Client.cs" />
+    <Compile Include="Decorator\IOrder.cs" />
+    <Compile Include="Decorator\OrderBread.cs" />
+    <Compile Include="Decorator\OrderChicken.cs" />
+    <Compile Include="Decorator\OrderDecorator.cs" />
+    <Compile Include="Decorator\OrderDrinks.cs" />
     <Compile Include="FactoryPattern\Problem\Client.cs" />
     <Compile Include="FactoryPattern\Problem\InvoiceWithHeader.cs" />
     <Compile Include="FactoryPattern\Problem\InvoiceWithOutHeader.cs" />
