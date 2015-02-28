@@ -150,6 +150,10 @@
     <Compile Include="SingletonPattern\SixthVersion\Singleton.cs" />
     <Compile Include="SingletonPattern\ThirdVersion\Singleton.cs" />
     <Compile Include="SingletonPattern\ZeroVersion\Singleton.cs" />
+    <Compile Include="Template\Client.cs" />
+    <Compile Include="Template\FileParser.cs" />
+    <Compile Include="Template\GeneralParser.cs" />
+    <Compile Include="Template\SqlServerParser.cs" />
     <Compile Include="Visitor\Address.cs" />
     <Compile Include="Visitor\Client.cs" />
     <Compile Include="Visitor\Customer.cs" />
